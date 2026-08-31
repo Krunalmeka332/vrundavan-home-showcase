@@ -9,14 +9,14 @@ import bath from "@/assets/coll-soft.jpg";
 import wallpaper from "@/assets/cat-wallpaper.jpg";
 
 const ITEMS = [
-  { image: bedroom, label: "Bedroom Edit", span: "md:col-span-2", h: "h-[300px] md:h-[420px]" },
-  { image: fabric, label: "Soft Textures", span: "", h: "h-[300px] md:h-[420px]" },
-  { image: pillows, label: "Everyday Comfort", span: "", h: "h-[260px] md:h-[300px]" },
-  { image: carpet, label: "Quiet Corners", span: "", h: "h-[260px] md:h-[380px]" },
-  { image: decor, label: "Natural Details", span: "", h: "h-[260px] md:h-[300px]" },
-  { image: corner, label: "Quiet Corners", span: "md:col-span-2", h: "h-[260px] md:h-[340px]" },
-  { image: bath, label: "Soft Textures", span: "", h: "h-[260px] md:h-[340px]" },
-  { image: wallpaper, label: "Natural Details", span: "", h: "h-[260px] md:h-[340px]" },
+  { image: bedroom, label: "Bedroom Edit", h: "h-[300px] md:h-[430px]" },
+  { image: pillows, label: "Everyday Comfort", h: "h-[260px] md:h-[300px]" },
+  { image: bath, label: "Soft Textures", h: "h-[300px] md:h-[380px]" },
+  { image: fabric, label: "Soft Textures", h: "h-[300px] md:h-[440px]" },
+  { image: corner, label: "Quiet Corners", h: "h-[260px] md:h-[300px]" },
+  { image: decor, label: "Natural Details", h: "h-[260px] md:h-[360px]" },
+  { image: carpet, label: "Quiet Corners", h: "h-[300px] md:h-[400px]" },
+  { image: wallpaper, label: "Natural Details", h: "h-[260px] md:h-[330px]" },
 ];
 
 export function Gallery() {
@@ -30,12 +30,12 @@ export function Gallery() {
           align="center"
         />
 
-        <div className="mt-14 grid gap-4 md:grid-cols-3">
+        <div className="mt-14 gap-4 md:columns-3 [&>figure]:mb-4">
           {ITEMS.map((item, i) => (
             <figure
               key={i}
               data-reveal
-              className={`reveal media-zoom group relative ${item.span}`}
+              className="reveal media-zoom group relative break-inside-avoid"
             >
               <img
                 src={item.image}
