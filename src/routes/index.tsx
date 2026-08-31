@@ -13,10 +13,11 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
+import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 
 const TITLE = "Vrundavan Home Decor | Premium Home Furnishings & Décor";
 const DESCRIPTION =
-  "Explore premium bed sheets, comforters, towels, carpets, wallpapers and décor from Vrundavan Home Decor — thoughtfully chosen furnishings for beautiful everyday living.";
+  "Explore premium bed sheets, comforters, towels, carpets, wallpapers, murtis and décor from Vrundavan Home Decor — thoughtfully chosen furnishings for beautiful everyday living.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -52,6 +53,7 @@ function Index() {
       </main>
       <Footer />
       <Toaster />
+      <WhatsAppButton />
     </div>
   );
 }
