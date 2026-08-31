@@ -104,7 +104,7 @@ export function Header() {
               aria-label={open ? "Close menu" : "Open menu"}
               className="p-2.5 text-foreground/80 transition-colors hover:text-primary lg:hidden"
             >
-              {open ? <Menu className="h-5 w-5" strokeWidth={1.5} /> : <Menu className="h-5 w-5" strokeWidth={1.5} />}
+              {open ? <X className="h-5 w-5" strokeWidth={1.5} /> : <Menu className="h-5 w-5" strokeWidth={1.5} />}
             </button>
           </div>
         </div>
@@ -158,5 +158,3 @@ function IconButton({
     </button>
   );
 }
-
-export { X };
