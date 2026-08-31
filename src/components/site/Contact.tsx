@@ -14,6 +14,7 @@ const CATEGORIES = [
   "Doormats",
   "Wallpapers",
   "Artificial Flowers & Plants",
+  "Artificial Murtis & Idols",
   "Flower Pots",
   "Bath Accessories",
 ];
@@ -45,7 +46,7 @@ export function Contact() {
 
         <div className="mt-14 grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
           <div data-reveal className="reveal space-y-8">
-            <Detail Icon={Phone} label="Phone" value="+91 98250 00000" />
+            <Detail Icon={Phone} label="Phone / WhatsApp" value="+91 95587 25537" />
             <Detail Icon={Mail} label="Email" value="hello@vrundavanhomedecor.com" />
             <Detail
               Icon={MapPin}

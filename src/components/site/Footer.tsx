@@ -14,6 +14,19 @@ const COLUMNS = [
   { title: "Help", links: ["FAQs", "Shipping Information", "Returns", "Privacy Policy", "Terms & Conditions"] },
 ];
 
+const SOCIAL = [
+  {
+    Icon: Instagram,
+    label: "Instagram",
+    href: "https://www.instagram.com/vrundavan_homedecor_cg/?utm_source=ig_web_button_share_sheet",
+  },
+  {
+    Icon: Facebook,
+    label: "Facebook",
+    href: "https://www.facebook.com/VrundavanHomeDecor",
+  },
+];
+
 export function Footer() {
   return (
     <footer className="bg-navy text-white">
@@ -27,26 +40,18 @@ export function Footer() {
               Thoughtfully chosen home décor and furnishings for beautiful everyday living.
             </p>
             <div className="mt-7 flex items-center gap-3">
-              {[
-                { Icon: Instagram, label: "Instagram" },
-                { Icon: Facebook, label: "Facebook" },
-              ].map(({ Icon, label }) => (
+              {SOCIAL.map(({ Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#contact"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="inline-flex h-9 w-9 items-center justify-center border border-white/20 text-white/75 transition-colors hover:border-brand-bright hover:text-white"
                 >
                   <Icon className="h-4 w-4" strokeWidth={1.4} />
                 </a>
               ))}
-              <a
-                href="#contact"
-                aria-label="Pinterest"
-                className="inline-flex h-9 items-center justify-center border border-white/20 px-3 text-[11px] tracking-[0.14em] text-white/75 transition-colors hover:border-brand-bright hover:text-white"
-              >
-                Pinterest
-              </a>
             </div>
           </div>
 
