@@ -9,14 +9,14 @@ import bath from "@/assets/coll-soft.jpg";
 import wallpaper from "@/assets/cat-wallpaper.jpg";
 
 const ITEMS = [
-  { image: bedroom, label: "Bedroom Edit", h: "h-[300px] md:h-[430px]" },
-  { image: pillows, label: "Everyday Comfort", h: "h-[260px] md:h-[300px]" },
-  { image: bath, label: "Soft Textures", h: "h-[300px] md:h-[380px]" },
-  { image: fabric, label: "Soft Textures", h: "h-[300px] md:h-[440px]" },
-  { image: corner, label: "Quiet Corners", h: "h-[260px] md:h-[300px]" },
-  { image: decor, label: "Natural Details", h: "h-[260px] md:h-[360px]" },
-  { image: carpet, label: "Quiet Corners", h: "h-[300px] md:h-[400px]" },
-  { image: wallpaper, label: "Natural Details", h: "h-[260px] md:h-[330px]" },
+  { image: bedroom, label: "Bedroom Edit" },
+  { image: pillows, label: "Everyday Comfort" },
+  { image: bath, label: "Soft Textures" },
+  { image: fabric, label: "Natural Textures" },
+  { image: corner, label: "Quiet Corners" },
+  { image: decor, label: "Natural Details" },
+  { image: carpet, label: "Warm Floors" },
+  { image: wallpaper, label: "Statement Walls" },
 ];
 
 export function Gallery() {
@@ -30,18 +30,18 @@ export function Gallery() {
           align="center"
         />
 
-        <div className="mt-14 gap-4 md:columns-3 [&>figure]:mb-4">
+        <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">
           {ITEMS.map((item, i) => (
             <figure
               key={i}
               data-reveal
-              className="reveal media-zoom group relative break-inside-avoid"
+              className="reveal media-zoom group relative"
             >
               <img
                 src={item.image}
                 alt={item.label}
                 loading="lazy"
-                className={`w-full object-cover ${item.h}`}
+                className="aspect-square w-full object-cover"
               />
               <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-navy/70 to-transparent p-5 text-[10.5px] font-medium uppercase tracking-[0.2em] text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                 {item.label}

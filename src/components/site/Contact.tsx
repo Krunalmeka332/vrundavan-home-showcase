@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { toast } from "sonner";
 import { SectionHeading } from "./SectionHeading";
 
@@ -51,13 +51,19 @@ export function Contact() {
             <Detail
               Icon={MapPin}
               label="Showroom"
-              value={"Vrundavan Home Decor\nRing Road, Surat, Gujarat 395002, India"}
+              value={"Arodrape House, Commerce Six Rd, Swastik Society,\nNavrangpura, Ahmedabad, Gujarat 380009"}
             />
-            <Detail
-              Icon={Clock}
-              label="Business Hours"
-              value={"Monday – Saturday · 10:00 AM – 8:30 PM\nSunday · 11:00 AM – 6:00 PM"}
-            />
+            <div className="media-zoom overflow-hidden border border-border">
+              <iframe
+                title="Vrundavan Home Decor on Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5884090852624!2d72.55908797600836!3d23.03887991571814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8545bbd1d50b%3A0x29075162fcf98291!2sVrundavan%20Home%20Decor!5e0!3m2!1sen!2sin!4v1788325970875!5m2!1sen!2sin"
+                className="h-[260px] w-full"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
           </div>
 
           <form data-reveal className="reveal" onSubmit={onSubmit}>

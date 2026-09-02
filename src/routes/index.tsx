@@ -9,7 +9,7 @@ import { WhyUs } from "@/components/site/WhyUs";
 import { Collections } from "@/components/site/Collections";
 import { About } from "@/components/site/About";
 import { Gallery } from "@/components/site/Gallery";
-import { Testimonials } from "@/components/site/Testimonials";
+
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -47,7 +47,6 @@ function Index() {
         <Collections />
         <About />
         <Gallery />
-        <Testimonials />
         <CtaBanner />
         <Contact />
       </main>
