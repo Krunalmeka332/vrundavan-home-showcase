@@ -6,7 +6,7 @@ import pillows from "@/assets/cat-pillows.jpg";
 import comforter from "@/assets/prod-comforter.jpg";
 import towels from "@/assets/cat-towels.jpg";
 import decor from "@/assets/cat-decor.jpg";
-import plant from "@/assets/prod-plant.jpg";
+import murti from "@/assets/prod-murti.jpg";
 import carpet from "@/assets/cat-carpet.jpg";
 
 const PRODUCTS = [
@@ -47,10 +47,10 @@ const PRODUCTS = [
     text: "Textured ceramic in a quiet, natural glaze.",
   },
   {
-    image: plant,
-    category: "Artificial Plants",
-    name: "Artificial Green Plant",
-    text: "Lifelike foliage that stays fresh all year.",
+    image: murti,
+    category: "Artificial Murti",
+    name: "Artificial Murti",
+    text: "Finely crafted deity figure to bring grace to your space.",
   },
   {
     image: carpet,
