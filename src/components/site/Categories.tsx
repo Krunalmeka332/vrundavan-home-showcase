@@ -7,7 +7,7 @@ import decor from "@/assets/cat-decor.jpg";
 import wallpaper from "@/assets/cat-wallpaper.jpg";
 import comforter from "@/assets/prod-comforter.jpg";
 import bedcover from "@/assets/prod-bedcover.jpg";
-import plant from "@/assets/prod-plant.jpg";
+import murti from "@/assets/prod-murti.jpg";
 import bathroom from "@/assets/coll-soft.jpg";
 import corner from "@/assets/gal-corner.jpg";
 import bedroom from "@/assets/gal-bedroom.jpg";
@@ -82,7 +82,7 @@ export function Categories() {
           <Tile image={carpet} name="Carpets" height="h-[240px]" />
           <Tile image={corner} name="Doormats" height="h-[240px]" />
           <Tile image={wallpaper} name="Wallpapers" height="h-[240px]" />
-          <Tile image={plant} name="Artificial Flowers" height="h-[240px]" />
+          <Tile image={murti} name="Artificial Murti" height="h-[240px]" />
         </div>
 
         <div className="mt-4 grid gap-4 md:grid-cols-2">
