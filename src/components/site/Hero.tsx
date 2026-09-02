@@ -10,7 +10,7 @@ export function Hero() {
         width={1920}
         height={1088}
         className="absolute inset-0 h-full w-full object-cover animate-[scale-in_1400ms_cubic-bezier(0.22,1,0.36,1)_both]"
-        priority
+       
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/50 to-navy/20" />
 
