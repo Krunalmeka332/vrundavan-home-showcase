@@ -1,5 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
-import logo from "@/assets/vrundavan-logo.png.asset.json";
+import logo from "@/assets/vrundavan-logo-transparent.png.asset.json";
 
 const COLUMNS = [
   {

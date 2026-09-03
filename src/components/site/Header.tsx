@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Search, Heart, MessageSquare, Menu, X } from "lucide-react";
-import logo from "@/assets/vrundavan-logo.png.asset.json";
+import logo from "@/assets/vrundavan-logo-transparent.png.asset.json";
 
 const NAV = [
   { label: "Home", href: "#home" },
