@@ -33,14 +33,16 @@ export function Footer() {
       <div className="mx-auto max-w-[1280px] px-6 py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2.7fr]">
           <div>
-            <img
-              src={logo.url}
-              alt="Vrundavan Home Decor"
-              width={200}
-              height={128}
-              className="h-14 w-auto"
-              loading="lazy"
-            />
+            <div className="inline-block rounded-md bg-white px-5 py-3">
+              <img
+                src={logo.url}
+                alt="Vrundavan Home Decor"
+                width={200}
+                height={128}
+                className="h-14 w-auto"
+                loading="lazy"
+              />
+            </div>
             <p className="mt-6 max-w-xs text-[13px] font-light leading-[1.9] text-white/65">
               Thoughtfully chosen home décor and furnishings for beautiful everyday living.
             </p>
