@@ -63,7 +63,7 @@ export function Header() {
             <img
               src={logo.url}
               alt="Vrundavan Home Decor"
-              className={`w-auto brightness-0 invert transition-all duration-300 ${scrolled ? "h-10" : "h-14"}`}
+              className={`w-auto transition-all duration-300 ${scrolled ? "h-10" : "h-14"}`}
               width={200}
               height={128}
             />
