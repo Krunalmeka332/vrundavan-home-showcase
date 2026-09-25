@@ -1,1 +1,2 @@
 - [x] Use the exact uploaded transparent logo in the footer and verify visibility
+- [x] Floating WhatsApp button: hide the number, click opens the visitor's WhatsApp chat directly
