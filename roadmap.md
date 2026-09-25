@@ -1,1 +1,1 @@
-- [ ] Use the exact uploaded transparent logo in the footer and verify visibility
+- [x] Use the exact uploaded transparent logo in the footer and verify visibility
