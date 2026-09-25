@@ -11,7 +11,7 @@ export function WhatsAppButton() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`Chat with Vrundavan Home Decor on WhatsApp at ${WHATSAPP_NUMBER_DISPLAY}`}
+      aria-label="Chat with Vrundavan Home Decor on WhatsApp"
       className="group fixed bottom-5 right-5 z-[60] inline-flex items-center gap-3 rounded-full bg-[#25D366] py-3 pl-3 pr-4 text-white shadow-[0_8px_24px_-6px_rgba(37,211,102,0.55)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_28px_-6px_rgba(37,211,102,0.7)] sm:pr-5"
     >
       <span className="flex h-8 w-8 shrink-0 items-center justify-center">
