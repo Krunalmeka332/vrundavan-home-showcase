@@ -3,3 +3,4 @@
 - [x] Footer background to #1B8FC1, logo back to normal size with hover grow, floating WhatsApp icon only
 - [x] Footer logo: same uploaded logo with a soft glow effect instead of the hard white outline
 - [x] Footer logo: same uploaded logo with the glow removed (normal logo, no effects)
+- [x] Footer logo: "HOME DECOR" lettering recolored to white, subtle reveal animation on scroll

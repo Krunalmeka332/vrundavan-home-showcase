@@ -1,5 +1,6 @@
+import { useEffect, useRef, useState } from "react";
 import { Instagram, Facebook } from "lucide-react";
-import logoFooter from "@/assets/vrundavan-logo-main.png.asset.json";
+import logoFooter from "@/assets/vrundavan-logo-footer-white.png.asset.json";
 
 const COLUMNS = [
   {
@@ -28,17 +29,45 @@ const SOCIAL = [
 ];
 
 export function Footer() {
+  const logoRef = useRef<HTMLImageElement | null>(null);
+  const [shown, setShown] = useState(false);
+
+  useEffect(() => {
+    const el = logoRef.current;
+    if (!el) return;
+    if (typeof IntersectionObserver === "undefined") {
+      setShown(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setShown(true);
+          io.disconnect();
+        }
+      },
+      { threshold: 0.25 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   return (
     <footer className="bg-brand-azure text-white">
       <div className="mx-auto max-w-[1280px] px-6 py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2.7fr]">
           <div>
             <img
+              ref={logoRef}
               src={logoFooter.url}
               alt="Vrundavan Home Decor"
               width={1000}
               height={652}
-              className="h-16 w-auto origin-left transition-transform duration-500 ease-out hover:scale-110 lg:h-20"
+              className="h-16 w-auto origin-left transition-[opacity,transform] duration-700 ease-out hover:scale-110 lg:h-20"
+              style={{
+                opacity: shown ? 1 : 0,
+                transform: shown ? "translateY(0) scale(1)" : "translateY(16px) scale(0.98)",
+              }}
               loading="lazy"
             />
             <p className="mt-6 max-w-xs text-[13px] font-light leading-[1.9] text-white/65">
