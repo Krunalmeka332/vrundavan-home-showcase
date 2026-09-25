@@ -73,7 +73,7 @@
   --brand-bright: oklch(0.61 0.145 236);
   --brand-tint: oklch(0.968 0.017 220);
   --sand: oklch(0.972 0.008 85);
-  --brand-azure: #1b8fc1;
+  --brand-azure: #008ecd;
 }
 
 @layer base {
