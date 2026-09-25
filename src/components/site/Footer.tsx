@@ -38,7 +38,7 @@ export function Footer() {
               alt="Vrundavan Home Decor"
               width={1000}
               height={652}
-              className="h-28 w-auto lg:h-32 [filter:drop-shadow(0_0_2px_rgba(255,255,255,0.95))_drop-shadow(0_0_7px_rgba(255,255,255,0.45))]"
+              className="h-32 w-auto lg:h-40 [filter:drop-shadow(0_1px_0_rgba(255,255,255,0.95))_drop-shadow(0_-1px_0_rgba(255,255,255,0.95))_drop-shadow(1px_0_0_rgba(255,255,255,0.95))_drop-shadow(-1px_0_0_rgba(255,255,255,0.95))_drop-shadow(0_0_10px_rgba(255,255,255,0.35))]"
               loading="lazy"
             />
             <p className="mt-6 max-w-xs text-[13px] font-light leading-[1.9] text-white/65">
