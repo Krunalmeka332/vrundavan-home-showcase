@@ -27,10 +27,10 @@ export function WhatsAppButton() {
         </svg>
       </span>
       <span className="flex flex-col leading-tight">
-        <span className="font-montserrat text-[10px] font-semibold uppercase tracking-[0.14em] text-white/85 sm:text-[11px]">
+        <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-white/85 sm:text-[11px]">
           Chat on WhatsApp
         </span>
-        <span className="font-montserrat text-sm font-bold tracking-wide sm:text-base">
+        <span className="text-sm font-bold tracking-wide sm:text-base">
           {WHATSAPP_NUMBER_DISPLAY}
         </span>
       </span>
