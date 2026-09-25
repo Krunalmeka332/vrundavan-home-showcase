@@ -1,3 +1,4 @@
 - [x] Use the exact uploaded transparent logo in the footer and verify visibility
 - [x] Floating WhatsApp button: hide the number, click opens the visitor's WhatsApp chat directly
 - [x] Footer background to #1B8FC1, logo back to normal size with hover grow, floating WhatsApp icon only
+- [x] Footer logo: same uploaded logo with a soft glow effect instead of the hard white outline
