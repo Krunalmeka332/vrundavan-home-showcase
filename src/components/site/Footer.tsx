@@ -1,5 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
-import logoFooter from "@/assets/vrundavan-footer-logo.png.asset.json";
+import logoFooter from "@/assets/vrundavan-logo-main.png.asset.json";
 
 const COLUMNS = [
   {
@@ -36,9 +36,9 @@ export function Footer() {
             <img
               src={logoFooter.url}
               alt="Vrundavan Home Decor"
-              width={200}
-              height={128}
-              className="h-24 w-auto brightness-125 lg:h-28"
+              width={1000}
+              height={652}
+              className="h-24 w-auto lg:h-28 [filter:drop-shadow(0_0_9px_rgba(255,255,255,0.4))_drop-shadow(0_0_2px_rgba(255,255,255,0.55))]"
               loading="lazy"
             />
             <p className="mt-6 max-w-xs text-[13px] font-light leading-[1.9] text-white/65">
