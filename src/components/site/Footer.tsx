@@ -29,7 +29,7 @@ const SOCIAL = [
 
 export function Footer() {
   return (
-    <footer className="bg-navy text-white">
+    <footer className="bg-brand-azure text-white">
       <div className="mx-auto max-w-[1280px] px-6 py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2.7fr]">
           <div>
@@ -38,7 +38,7 @@ export function Footer() {
               alt="Vrundavan Home Decor"
               width={1000}
               height={652}
-              className="h-32 w-auto lg:h-40 [filter:drop-shadow(0_1px_0_rgba(255,255,255,0.95))_drop-shadow(0_-1px_0_rgba(255,255,255,0.95))_drop-shadow(1px_0_0_rgba(255,255,255,0.95))_drop-shadow(-1px_0_0_rgba(255,255,255,0.95))_drop-shadow(0_0_10px_rgba(255,255,255,0.35))]"
+              className="h-16 w-auto origin-left transition-transform duration-500 ease-out hover:scale-110 lg:h-20 [filter:drop-shadow(0_1px_0_rgba(255,255,255,0.95))_drop-shadow(0_-1px_0_rgba(255,255,255,0.95))_drop-shadow(1px_0_0_rgba(255,255,255,0.95))_drop-shadow(-1px_0_0_rgba(255,255,255,0.95))_drop-shadow(0_0_10px_rgba(255,255,255,0.35))]"
               loading="lazy"
             />
             <p className="mt-6 max-w-xs text-[13px] font-light leading-[1.9] text-white/65">
