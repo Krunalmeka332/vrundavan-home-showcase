@@ -1,5 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
-import logoFooter from "@/assets/vrundavan-logo-footer.png";
+import logoFooter from "@/assets/vrundavan-footer-logo.png.asset.json";
 
 const COLUMNS = [
   {
@@ -34,11 +34,11 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2.7fr]">
           <div>
             <img
-              src={logoFooter}
+              src={logoFooter.url}
               alt="Vrundavan Home Decor"
               width={200}
               height={128}
-              className="h-20 w-auto"
+              className="h-24 w-auto brightness-125 lg:h-28"
               loading="lazy"
             />
             <p className="mt-6 max-w-xs text-[13px] font-light leading-[1.9] text-white/65">
