@@ -5,3 +5,4 @@
 - [x] Footer logo: same uploaded logo with the glow removed (normal logo, no effects)
 - [x] Footer logo: "HOME DECOR" lettering recolored to white, subtle reveal animation on scroll
 - [x] Footer background color changed to #008ECD
+- [x] Header: removed the vibrant blue click/hover flash and the animated underline; tap highlight disabled
