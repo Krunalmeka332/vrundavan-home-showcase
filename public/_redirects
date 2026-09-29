@@ -1,2 +1,6 @@
-/*    /index.html   200
- 
+# URL redirects for the site
+# Format:  /old-path   /new-path   [301|302|200]
+#
+# Examples (add your own redirects below, one per line):
+# /about              /
+# /products/bedsheets /#products   301
