@@ -74,11 +74,11 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="relative py-1 text-[12.5px] font-medium tracking-[0.06em] text-foreground/80 transition-colors hover:text-primary"
+                className="relative py-1 text-[12.5px] font-medium tracking-[0.06em] text-foreground/80 hover:text-foreground"
               >
                 {item.label}
                 <span
-                  className={`absolute -bottom-0.5 left-0 h-px bg-primary transition-all duration-300 ${
+                  className={`absolute -bottom-0.5 left-0 h-px bg-primary ${
                     active === item.href ? "w-full" : "w-0"
                   }`}
                 />
@@ -102,7 +102,7 @@ export function Header() {
               type="button"
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
-              className="p-2.5 text-foreground/80 transition-colors hover:text-primary lg:hidden"
+              className="p-2.5 text-foreground/80 hover:text-foreground lg:hidden"
             >
               {open ? <X className="h-5 w-5" strokeWidth={1.5} /> : <Menu className="h-5 w-5" strokeWidth={1.5} />}
             </button>
@@ -145,7 +145,7 @@ function IconButton({
   href?: string;
 }) {
   const cls =
-    "inline-flex h-9 w-9 items-center justify-center text-foreground/70 transition-colors hover:text-primary";
+    "inline-flex h-9 w-9 items-center justify-center text-foreground/70 hover:text-foreground";
   if (href)
     return (
       <a href={href} aria-label={label} className={cls}>
