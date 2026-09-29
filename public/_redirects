@@ -1,9 +1,6 @@
 # URL redirects for the site
 # Format:  /old-path   /new-path   [301|302|200]
 #
-# Examples (edit or remove as needed):
+# Examples (add your own redirects below, one per line):
 # /about              /
-# /products/bedsheets /#products
-
-# Redirect any unknown URL to the home page
-/*    /    301
+# /products/bedsheets /#products   301
