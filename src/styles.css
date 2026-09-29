@@ -171,3 +171,14 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* No bright tap/click highlight flash */
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
