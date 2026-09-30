@@ -50,20 +50,16 @@ export function Header() {
       </div>
 
       <header
-        className={`sticky top-0 z-50 border-b bg-background transition-all duration-300 ${
+        className={`sticky top-0 z-50 border-b bg-background transition-[border-color,box-shadow] duration-300 ${
           scrolled ? "border-border shadow-[0_6px_24px_-18px_rgba(8,43,76,0.5)]" : "border-transparent"
         }`}
       >
-        <div
-          className={`mx-auto flex max-w-[1280px] items-center justify-between px-6 transition-all duration-300 ${
-            scrolled ? "h-[68px]" : "h-[92px]"
-          }`}
-        >
+        <div className="mx-auto flex h-[80px] max-w-[1280px] items-center justify-between px-6">
           <a href="#home" className="flex items-center" aria-label="Vrundavan Home Decor — home">
             <img
               src={logo.url}
               alt="Vrundavan Home Decor"
-              className={`w-auto transition-all duration-300 ${scrolled ? "h-10" : "h-14"}`}
+              className="h-12 w-auto"
               width={200}
               height={128}
             />
