@@ -83,11 +83,10 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 72px;
   }
 
   section[id] {
-    scroll-margin-top: 72px;
+    scroll-margin-top: 76px;
   }
 
   body {
